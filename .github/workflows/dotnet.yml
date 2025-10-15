@@ -26,4 +26,5 @@ jobs:
       run: dotnet build ./ArrayUtils.Tests/ArrayUtils.Tests.csproj --no-restore --configuration Release
 
     - name: Run tests
-      run: dotnet test ./ArrayUtils.Tests/ArrayUtils.Tests.csproj --no-build --verbosity normal
+      run: dotnet test --configuration Release --verbosity normal
+
